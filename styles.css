@@ -1,0 +1,27 @@
+:root {
+	--clr-black: hsl(0, 0%, 0%); /* Hex  #000 */
+    --clr-black-almost: hsl(0, 0%, 8%); /* Hex  #151515 */
+    --clr-white: hsl(0, 0%, 100%); /* Hex  #FFF */
+    --clr-blue-alice: hsl(208, 100%, 97%); /* Hex  #F0F8FF */
+    --clr-blue-light: hsl(208, 100%, 79%); /* Hex  #93CDFF */
+    --clr-purple-brand: hsl(274, 97%, 73%); /* Hex  #C479FD */
+
+	--ff-default: 'Space Grotesk', sans-serif;
+
+	--fw-700: 700;
+	--fw-400: 400;
+
+	--fs-xlarge: 5.5rem; /* 88px */
+	--fs-large: 3.5rem; /* 56px */
+	--fs-medium: 1.5rem; /* 24px */
+	--fs-regular: 1.125rem; /* 18px */
+}
+
+body {
+    background-color: var(--clr-black-almost);
+    color: var(--clr-purple-brand);
+    font-family: var(--ff-default);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-400);
+    line-height: 1.5;
+}
