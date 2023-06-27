@@ -1,4 +1,5 @@
 :root {
+    
 	--clr-black: hsl(0, 0%, 0%); /* Hex  #000 */
     --clr-black-almost: hsl(0, 0%, 8%); /* Hex  #151515 */
     --clr-white: hsl(0, 0%, 100%); /* Hex  #FFF */
@@ -6,7 +7,9 @@
     --clr-blue-light: hsl(208, 100%, 79%); /* Hex  #93CDFF */
     --clr-purple-brand: hsl(274, 97%, 73%); /* Hex  #C479FD */
 
-	--ff-default: 'Space Grotesk', sans-serif;
+	--ff-default: 'Wonderland', cursive;
+    --ff-computer: 'Share Tech Mono', monospace;
+    --ff-alice: 'Alice', serif;
 
 	--fw-700: 700;
 	--fw-400: 400;
@@ -17,6 +20,13 @@
 	--fs-regular: 1.125rem; /* 18px */
 }
 
+/* --- TYPOGRAPHY --- */
+
+@font-face {
+    font-family: Wonderland;
+    src: url(./Fonts/alice_in_wonderland/Alice_in_Wonderland_3.ttf);
+}
+
 body {
     background-color: var(--clr-black-almost);
     color: var(--clr-purple-brand);
@@ -24,4 +34,35 @@ body {
     font-size: var(--fs-regular);
     font-weight: var(--fw-400);
     line-height: 1.5;
+}
+
+h1 {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-700);
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+hr {
+    border: 1px solid var(--clr-blue-light);
+    margin: 1rem 0;
+}
+
+/* -- Typography: Utility Classes -- */
+
+.ff-computer {
+    font-family: var(--ff-computer);
+    color: var(--clr-blue-alice);
+}
+
+.font-uppercase {
+    text-transform: uppercase;
+}
+
+/* --- LAYOUT --- */
+
+header {
+    padding: 1rem;
+    max-width: 75vw;
+    display: grid;
+    text-align: center;
 }
