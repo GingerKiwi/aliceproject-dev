@@ -7,7 +7,7 @@
     --clr-blue-light: hsl(208, 100%, 79%); /* Hex  #93CDFF */
     --clr-purple-brand: hsl(274, 97%, 73%); /* Hex  #C479FD */
 
-	--ff-default: 'Wonderland', cursive;
+	--ff-wonderland: 'Wonderland', cursive;
     --ff-computer: 'Share Tech Mono', monospace;
     --ff-alice: 'Alice', serif;
 
@@ -30,7 +30,7 @@
 body {
     background-color: var(--clr-black-almost);
     color: var(--clr-purple-brand);
-    font-family: var(--ff-default);
+    font-family: var(--ff-alice);
     font-size: var(--fs-regular);
     font-weight: var(--fw-400);
     line-height: 1.5;
@@ -40,11 +40,29 @@ h1 {
     font-size: var(--fs-large);
     font-weight: var(--fw-700);
     line-height: 1.5;
-    text-transform: uppercase;
+    font-family: var(--ff-wonderland);
 }
+h1, h2 {
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+p {
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-400);
+    line-height: 1.5;
+    font-family: var(--ff-alice);
+    color: var(--clr-blue-light);
+    padding: 1.25rem 0;
+}
+
 hr {
     border: 1px solid var(--clr-blue-light);
     margin: 1rem 0;
+}
+
+a {
+    color: var(--clr-blue-alice);
 }
 
 /* -- Typography: Utility Classes -- */
@@ -65,4 +83,5 @@ header {
     max-width: 75vw;
     display: grid;
     text-align: center;
+    align-content: center;
 }
